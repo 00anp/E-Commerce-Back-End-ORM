@@ -1,3 +1,45 @@
 node_modules
 .env
 .DS_Store
+
+
+POST categories
+{
+    "category_name" : "sweater"
+}
+
+PUT categories pass ID 6
+
+{
+    "category_name" : "gym sweater"
+}
+
+POST products
+{
+    "product_name": "Basketball sweater",
+    "price": 200.00,
+    "stock": 3,
+    "category_id": 6
+}
+
+PUT products pass ID 6
+{
+    "product_name": "Blue Basketball sweater",
+    "price": 180.00,
+    "stock": 30,
+    "category_id": 6
+}
+
+POST tag
+{
+    "tag_name": "Basketball",
+}
+
+PUT TAG pass ID 9
+{
+    "tag_name": "Basketball gear",
+}
+
+DELETE TAG 6
+DELETE PRODUCTS 6
+DELETE CATEGORIES 6
